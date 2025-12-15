@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Game Tes Kerja</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container" id="login">
+  <h2>Game Tes Kerja</h2>
+  <input type="text" id="nama" placeholder="Nama Lengkap">
+  <input type="text" id="kelas" placeholder="Kelas / Jurusan">
+  <button onclick="mulaiInfo()">Mulai</button>
+</div>
+
+<div class="container hidden" id="info">
+  <h3>Petunjuk Tes</h3>
+  <p>• Total 30 soal</p>
+  <p>• Waktu tiap soal 15 detik</p>
+  <p>• Jawaban tidak bisa diubah</p>
+  <button onclick="mulaiGame()">Mulai Tes</button>
+</div>
+
+<div class="container hidden" id="game">
+  <div id="timer">15</div>
+  <div id="soal"></div>
+  <div id="jawaban"></div>
+</div>
+
+<div class="container hidden" id="hasil">
+  <h2>Hasil Tes</h2>
+  <p id="rekap"></p>
+  <button onclick="location.reload()">Ulangi Tes</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
